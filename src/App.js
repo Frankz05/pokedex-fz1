@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as bootstrap from 'bootstrap';
+// import * as bootstrap from 'bootstrap';
 import './App.css';
 import { HashRouter, Routes, Route } from "react-router-dom";
 import UserInput from './components/UserInput';
