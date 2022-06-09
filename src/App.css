@@ -13,6 +13,7 @@ body{
 .App {
   text-align: center;
   overflow-x:hidden;
+  overflow-y: hidden;
   background-color: #E5E5E5;
   width: 100vw;
   height: 100vh;
@@ -22,7 +23,7 @@ body{
 }
 .interfaceInput{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +62,7 @@ body{
 }
 /* **FOOTER** */
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100vw;
 }
@@ -70,21 +71,21 @@ footer{
   background-color: #DD1A1A;
   display: inline-block;
   color: #DD1A1A;
-  height: 2rem;
+  height: 1.6rem;
   z-index: 10;
 }
 .lineBlack{
   background-color:  #0C0C0C;
   color: #0C0C0C;
-  height: 1.5rem;
+  height: 1.1rem;
 }
 .pokeball{
-  width: 3.5rem;
+  width: 2.5rem;
   margin-bottom: -8.4rem;
   position: absolute;
-  left: calc((90%-3.5rem)/2);
+  left: calc((90%-2.5rem)/2);
+  top: .1rem;
   z-index:5;
-
 }
 
 /* POKEDEX */
@@ -772,8 +773,19 @@ i{
 
   /* **FOOTER** */
   footer{
-    position: absolute;
-    bottom: .05rem;
+    position: fixed;
+    bottom: 0;
+  }
+  .lineRed{
+    height: 3rem;
+  }
+  .lineBlack{
+    height: 2rem;
+  }
+  .pokeball{
+    width: 4.8rem;
+    left: calc((90%-2.5rem)/2);
+    top: .2rem;
   }
   /* POKEDEX */
   .lineHeadRed{
